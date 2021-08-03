@@ -1,0 +1,40 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: shenjia
+ * @Date: 2021-07-24 14:20:38
+ * @LastEditors: shenjia
+ * @LastEditTime: 2021-07-24 14:36:40
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var obj = {
+        name: 'muer',
+        getName: function() {
+          return this.name;
+        }
+      };
+
+      var getNameTest1 = obj.getName;
+      console.log(getNameTest1());
+
+      var getNameTest2 = obj.getName.bind(obj);
+      console.log(getNameTest2());
+
+      /* 
+      总结：
+      ·bind的底层原理是？ 
+      
+      
+      */
+    </script>
+  </body>
+</html>
