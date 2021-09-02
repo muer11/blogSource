@@ -4,9 +4,27 @@
  * @Author: shenjia
  * @Date: 2021-08-12 05:18:55
  * @LastEditors: shenjia
- * @LastEditTime: 2021-08-21 22:59:08
+ * @LastEditTime: 2021-08-30 14:40:28
 -->
 # React Hooks 源码解析
+
+
+源码概览：[源码概览](https://pomb.us/build-your-own-react/)
+
+疑问点：
+1. Babel如何将JSX转化为JS?
+2. 流程：
+   1. React.createElement从它的参数创建一个对象。
+      ```
+      const element = React.createElement(
+        "h1",
+        { title: "foo" },
+        "Hello"
+      )
+      ```
+   2. 
+
+
 
 如何学习源码？
 
@@ -305,5 +323,5 @@
 
 
 
-[](https://juejin.cn/post/6944863057000529933)
-[](https://juejin.cn/post/6847902224287285255)
+[「react进阶」一文吃透react-hooks原理](https://juejin.cn/post/6944863057000529933)
+[深入源码剖析componentWillXXX为什么UNSAFE](https://juejin.cn/post/6847902224287285255)
