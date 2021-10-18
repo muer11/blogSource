@@ -4,7 +4,7 @@
  * @Author: shenjia
  * @Date: 2021-08-02 18:38:47
  * @LastEditors: shenjia
- * @LastEditTime: 2021-08-03 10:57:23
+ * @LastEditTime: 2021-10-08 16:06:53
  */
 module.exports = {
   title: '佳佳同学の分享',
@@ -49,6 +49,17 @@ module.exports = {
           {
             title: '实践',
             path: '/home/test'
+          }
+        ],
+        sidebarDepth: 1,
+        initialOpenGroupIndex: -1 // 可选的, 默认值是 0
+      },
+      {
+        title: 'CSS',
+        children: [
+          {
+            title: '渲染',
+            path: '/home/css/render'
           }
         ],
         sidebarDepth: 1,
@@ -104,12 +115,8 @@ module.exports = {
         title: '工程化',
         children: [
           {
-            title: '开发',
-            path: '/home/name'
-          },
-          {
-            title: 'google插件',
-            path: '/home/test'
+            title: '事件委托',
+            path: '/home/Performance/delegate'
           }
         ],
         sidebarDepth: 1,
@@ -121,10 +128,6 @@ module.exports = {
           {
             title: 'GIT',
             path: '/extend/git/remote'
-          },
-          {
-            title: 'google插件',
-            path: '/home/test'
           }
         ],
         sidebarDepth: 1,
@@ -134,47 +137,47 @@ module.exports = {
         title: '计算机网络',
         children: [
           {
-            title: '开发',
-            path: '/base/name'
+            title: '1. 从输入一个 URL 地址到浏览器完成渲染的整个过程',
+            path: '/extend/network/url'
           },
           {
-            title: 'google插件',
-            path: '/base/test'
+            title: '2. HTTP 详解',
+            path: '/extend/network/http'
           }
         ],
         sidebarDepth: 1,
         initialOpenGroupIndex: -1 // 可选的, 默认值是 0
       },
-      {
-        title: '计算机操作系统',
-        children: [
-          {
-            title: '开发',
-            path: '/base/name'
-          },
-          {
-            title: 'google插件',
-            path: '/base/test'
-          }
-        ],
-        sidebarDepth: 1,
-        initialOpenGroupIndex: -1 // 可选的, 默认值是 0
-      },
-      {
-        title: '计算机组成原理',
-        children: [
-          {
-            title: '开发',
-            path: '/base/name'
-          },
-          {
-            title: 'google插件',
-            path: '/base/test'
-          }
-        ],
-        sidebarDepth: 1,
-        initialOpenGroupIndex: -1 // 可选的, 默认值是 0
-      },
+      // {
+      //   title: '计算机操作系统',
+      //   children: [
+      //     {
+      //       title: '开发',
+      //       path: '/base/name'
+      //     },
+      //     {
+      //       title: 'google插件',
+      //       path: '/base/test'
+      //     }
+      //   ],
+      //   sidebarDepth: 1,
+      //   initialOpenGroupIndex: -1 // 可选的, 默认值是 0
+      // },
+      // {
+      //   title: '计算机组成原理',
+      //   children: [
+      //     {
+      //       title: '开发',
+      //       path: '/base/name'
+      //     },
+      //     {
+      //       title: 'google插件',
+      //       path: '/base/test'
+      //     }
+      //   ],
+      //   sidebarDepth: 1,
+      //   initialOpenGroupIndex: -1 // 可选的, 默认值是 0
+      // },
 
       {
         title: '数据结构',

@@ -4,7 +4,7 @@
  * @Author: shenjia
  * @Date: 2021-08-12 05:18:55
  * @LastEditors: shenjia
- * @LastEditTime: 2021-08-30 14:40:28
+ * @LastEditTime: 2021-09-17 20:43:03
 -->
 # React Hooks 源码解析
 
@@ -320,6 +320,18 @@
 
 4. hooks更新阶段
 对于一次函数组件更新，当再次执行hooks函数的时候，比如 useState(0) ，首先要从current的hooks中找到与当前workInProgressHook，对应的currentHooks，然后复制一份currentHooks给workInProgressHook,接下来hooks函数执行的时候,把最新的状态更新到workInProgressHook，保证hooks状态不丢失。
+
+
+
+### DIFF
+- 入口函数：**reconcileChildFibers**（react/packages/react-reconciler/src/ReactChildFiber.old.js）
+- 
+
+### 代数效应
+try...catch最大的不同在于：当Error被catch捕获后，之前的调用栈就销毁了。
+
+
+
 
 
 
